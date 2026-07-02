@@ -1,15 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google"
+import Footer from "../components/Footer"
+import Navigation from "../components/Navigation"
 import "./globals.css"
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"]
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"]
-})
 
 export const metadata = {
   title: "Next.js App",
@@ -19,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body cz-shortcut-listen="true">{children}</body>
+      <body className="min-h-screen flex flex-col" cz-shortcut-listen="true">
+        <Navigation />
+        <main className="grow p-6">{children}</main>
+        <Footer />
+      </body>
     </html>
   )
 }

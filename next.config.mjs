@@ -2,6 +2,7 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
-};
+  devIndicators: true
+}
 
-export default nextConfig;
+export default nextConfig

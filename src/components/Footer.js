@@ -2,8 +2,8 @@ export default function Footer() {
   return (
     <footer className="bg-gray-200 text-center py-4 mt-auto">
       <p>
-        &copy; {new Date().getFullYear()} - My Next.js App - Built with love
-        using Next.js
+        &copy; {new Date().getFullYear()} - My Next.js App - Built with ❤️ using
+        Next.js 16
       </p>
     </footer>
   )

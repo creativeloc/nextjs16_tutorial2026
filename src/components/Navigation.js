@@ -15,6 +15,9 @@ export default function Navigation() {
             <Link href="/comments">Comments</Link>
           </li>
           <li>
+            <Link href="/checkout">Checkout</Link>
+          </li>
+          <li>
             <Link href="/about/team">Team</Link>
           </li>
           <li>
